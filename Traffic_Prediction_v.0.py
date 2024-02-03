@@ -84,28 +84,28 @@ def inverse_transform(last_ob, value, average, std):
     return inverted
 
 # Define or load RMSE values
-RMSE_J1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_rmse.npy")
-RMSE_J2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_rmse.npy")
-RMSE_J3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_rmse.npy")
-RMSE_J4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_rmse.npy")
+RMSE_J1 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_1_rmse.npy")
+RMSE_J2 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_2_rmse.npy")
+RMSE_J3 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_3_rmse.npy")
+RMSE_J4 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_4_rmse.npy")
 
 # Load the saved predictions (assuming they are saved as .npy)
-PredJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_predictions.npy")
-PredJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_predictions.npy")
-PredJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_predictions.npy")
-PredJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_predictions.npy")
+PredJ1 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_1_predictions.npy")
+PredJ2 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_2_predictions.npy")
+PredJ3 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_3_predictions.npy")
+PredJ4 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_4_predictions.npy")
 
 # Load the test datasets
-X_testJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_test_features.npy")
-X_testJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_test_features.npy")
-X_testJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_test_features.npy")
-X_testJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_test_features.npy")
+X_testJ1 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_1_test_features.npy")
+X_testJ2 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_2_test_features.npy")
+X_testJ3 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_3_test_features.npy")
+X_testJ4 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_4_test_features.npy")
 
 # Load the test datasets
-y_testJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_test_y.npy")
-y_testJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_test_y.npy")
-y_testJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_test_y.npy")
-y_testJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_test_y.npy")
+y_testJ1 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_1_test_y.npy")
+y_testJ2 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_2_test_y.npy")
+y_testJ3 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_3_test_y.npy")
+y_testJ4 = np.load("https://github.com/ReshmaJP/Scifor_Final-Project.git/junction_4_test_y.npy")
 
 # Display RMSE values
 st.subheader("Root Mean Squared Error (RMSE) for Each Junction:")
@@ -179,10 +179,10 @@ if st.button("Show Forecast"):
 
 
     # Load Transform_reverssed_J1_J2_J3_J4 
-    Transform_reverssed_J1 = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J1.csv')
-    Transform_reverssed_J2 = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J2.csv')
-    Transform_reverssed_J3 = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J3.csv')
-    Transform_reverssed_J4 = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J4.csv')
+    Transform_reverssed_J1 = pd.read_csv('https://github.com/ReshmaJP/Scifor_Final-Project.git/Transform_reverssed_J1.csv')
+    Transform_reverssed_J2 = pd.read_csv('https://github.com/ReshmaJP/Scifor_Final-Project.git/Transform_reverssed_J2.csv')
+    Transform_reverssed_J3 = pd.read_csv('https://github.com/ReshmaJP/Scifor_Final-Project.git/Transform_reverssed_J3.csv')
+    Transform_reverssed_J4 = pd.read_csv('https://github.com/ReshmaJP/Scifor_Final-Project.git/Transform_reverssed_J4.csv')
 
     # Create a Plotly figure based on the selected junction
     if junction_choice == "Junction 1":
