@@ -31,7 +31,7 @@ st.markdown(
 # Main Heading with styling
 st.markdown(
     """
-    <h1 style='color: violet;'>Traffic Forecasting Application</h1>
+    <h1 style='color: purple;'>Traffic Forecasting Application</h1>
     """,
     unsafe_allow_html=True
 )
@@ -85,7 +85,7 @@ selected_plot = st.selectbox("Select Plot", plot_options)
 st.subheader(f"{selected_plot}")
 #colors = ["#FFD4DB", "#BBE7FE", "#D3B5E5", "#dfe2b6"]
 colors = ["#A52A2A", "#FFFF00", "#3357FF", "#00FF00"]
-plt.figure(figsize=(20, 4), facecolor="violet")
+plt.figure(figsize=(20, 4), facecolor="purple")
 
 if "Year" in selected_plot:
     feature_column = "Year"
