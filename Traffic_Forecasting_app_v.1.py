@@ -122,9 +122,9 @@ RMSE_J4 = np.load("junction_4_rmse.npy")
 
 # Load the saved predictions (assuming they are saved as .npy)
 PredJ1 = np.load("junction_1_predictions.npy")
-PredJ2 = np.load("junction_1_predictions.npy")
-PredJ3 = np.load("junction_1_predictions.npy")
-PredJ4 = np.load("junction_1_predictions.npy")
+PredJ2 = np.load("junction_2_predictions.npy")
+PredJ3 = np.load("junction_3_predictions.npy")
+PredJ4 = np.load("junction_4_predictions.npy")
 
 # Load the test datasets
 X_testJ1 = np.load("junction_1_test_features.npy")
