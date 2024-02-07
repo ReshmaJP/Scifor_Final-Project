@@ -217,10 +217,10 @@ if st.button("Show Forecast"):
     st.plotly_chart(fig2)
  
     # Load Transform_reverssed_J1_J2_J3_J4 
-    Transform_reverssed_J1_new = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J1_new.csv')
-    Transform_reverssed_J2_new = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J2_new.csv')
-    Transform_reverssed_J3_new = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J3_new.csv')
-    Transform_reverssed_J4_new = pd.read_csv('C:/Users/SONY/Downloads/Python/Transform_reverssed_J4_new.csv')
+    Transform_reverssed_J1_new = pd.read_csv('Transform_reverssed_J1_new.csv')
+    Transform_reverssed_J2_new = pd.read_csv('Transform_reverssed_J2_new.csv')
+    Transform_reverssed_J3_new = pd.read_csv('Transform_reverssed_J3_new.csv')
+    Transform_reverssed_J4_new = pd.read_csv('Transform_reverssed_J4_new.csv')
     
     # Create a Plotly figure based on the selected junction
     if junction_choice == "Junction 1":
