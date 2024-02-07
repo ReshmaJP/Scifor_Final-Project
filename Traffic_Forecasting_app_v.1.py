@@ -115,28 +115,28 @@ def inverse_transform(last_ob, value, average, std):
     return inverted
 
 # Define or load RMSE values
-RMSE_J1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_rmse.npy")
-RMSE_J2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_rmse.npy")
-RMSE_J3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_rmse.npy")
-RMSE_J4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_rmse.npy")
+RMSE_J1 = np.load("junction_1_rmse.npy")
+RMSE_J2 = np.load("junction_2_rmse.npy")
+RMSE_J3 = np.load("junction_3_rmse.npy")
+RMSE_J4 = np.load("junction_4_rmse.npy")
 
 # Load the saved predictions (assuming they are saved as .npy)
-PredJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_predictions.npy")
-PredJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_predictions.npy")
-PredJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_predictions.npy")
-PredJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_predictions.npy")
+PredJ1 = np.load("junction_1_predictions.npy")
+PredJ2 = np.load("junction_1_predictions.npy")
+PredJ3 = np.load("junction_1_predictions.npy")
+PredJ4 = np.load("junction_1_predictions.npy")
 
 # Load the test datasets
-X_testJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_test_features.npy")
-X_testJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_test_features.npy")
-X_testJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_test_features.npy")
-X_testJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_test_features.npy")
+X_testJ1 = np.load("junction_1_test_features.npy")
+X_testJ2 = np.load("junction_2_test_features.npy")
+X_testJ3 = np.load("junction_3_test_features.npy")
+X_testJ4 = np.load("junction_4_test_features.npy")
 
 # Load the test datasets
-y_testJ1 = np.load("C:/Users/SONY/Downloads/Python/junction_1_test_y.npy")
-y_testJ2 = np.load("C:/Users/SONY/Downloads/Python/junction_2_test_y.npy")
-y_testJ3 = np.load("C:/Users/SONY/Downloads/Python/junction_3_test_y.npy")
-y_testJ4 = np.load("C:/Users/SONY/Downloads/Python/junction_4_test_y.npy")
+y_testJ1 = np.load("junction_1_test_y.npy")
+y_testJ2 = np.load("junction_2_test_y.npy")
+y_testJ3 = np.load("junction_3_test_y.npy")
+y_testJ4 = np.load("junction_4_test_y.npy")
 
 # Display RMSE values
 st.subheader("Root Mean Squared Error (RMSE) for Each Junction:")
